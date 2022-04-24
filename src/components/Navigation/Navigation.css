@@ -1,0 +1,115 @@
+nav {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 2rem;
+}
+nav h1 {
+  color: rgb(231, 10, 139);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+nav span {
+  color: white;
+}
+nav ul li a {
+  color: rgb(231, 10, 139);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+nav ul li a:hover {
+  border-bottom: 1px solid white;
+}
+.hamburger {
+  display: none;
+}
+/* ---------------MEDIA QUERY----------------- */
+@media screen and (max-width: 1240px) {
+  nav {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .navLinks {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 5rem;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 700ms all ease;
+    z-index: -1;
+  }
+  .navLinks a{
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  .navLinks.active {
+    left: 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    color: rgb(231, 10, 139);
+  }
+}
+@media screen and (max-width: 600px){
+  nav {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .navLinks {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 5rem;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 700ms all ease;
+    z-index: -1;
+  }
+  .navLinks a{
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  .navLinks.active {
+    left: 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    color: rgb(231, 10, 139);
+  }
+}
