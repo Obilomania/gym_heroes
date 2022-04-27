@@ -1,11 +1,12 @@
 nav {
   z-index: 2;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
   width: 100%;
+  top: 0;
 }
 nav ul {
   display: flex;
@@ -62,9 +63,9 @@ nav ul li a:hover {
     transition: 700ms all ease;
     z-index: -1;
   }
-  .navLinks a{
-      font-size: 1.5rem;
-      text-align: center;
+  .navLinks a {
+    font-size: 1.5rem;
+    text-align: center;
   }
   .navLinks.active {
     left: 0;
@@ -75,10 +76,10 @@ nav ul li a:hover {
     color: rgb(231, 10, 139);
   }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   nav {
     z-index: 2;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,9 +101,9 @@ nav ul li a:hover {
     transition: 700ms all ease;
     z-index: -1;
   }
-  .navLinks a{
-      font-size: 1.5rem;
-      text-align: center;
+  .navLinks a {
+    font-size: 1.5rem;
+    text-align: center;
   }
   .navLinks.active {
     left: 0;

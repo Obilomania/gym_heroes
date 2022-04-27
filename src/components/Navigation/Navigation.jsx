@@ -6,6 +6,7 @@ const Navigation = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click)
     
+    
     return (
         <>
             <nav>
